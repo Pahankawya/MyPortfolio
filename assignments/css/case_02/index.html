@@ -1,10 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css" />
+    <title>Case_two</title>
+    <style>
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(255, 255, 255);
+            box: shadow 2px 2px 3px 2px black;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            border-bottom: 2px solid;
+        }
+        .logo > img {
+            position: relative;
+            left: 5px;
+            width: 200px;
+            height: 80px;
+        }
+        nav {
+            position: absolute;
+            right: 5px;
+            top: 0px;
+        }
+        header > nav > ul > li {
+            display: inline-block;
+            margin: 20px;
+            right: 0;
+        }
+        .side_menu {
+            position: absolute;
+            background-color: rgb(61, 18, 233);
+            width: 150px;
+            bottom: 0;
+            top: 0;
+        }
+
+        main {
+            position: relative;
+        }
+        section > aside > .side_menu > .SM {
+            display: inline-block;
+        }
+        footer {
+            background-color: darkgray;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            bottom: 0px;
+        }
+        body > main {
+            position: relative;
+        }
+        .pg {
+            padding: 10px;
+            margin-left: 200px;
+        }
+        .SM > li {
+            margin: 10px;
+            display: inline-flex;
+        }
+        .imgdiv {
+            position: relative;
+            height: 260px;
+            margin-left: 200px;
+            margin-right: 20px;
+            margin-top: 85px;
+        }
+        .imgdiv > div > img {
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+        .imgdiv > div:nth-child(1) {
+            position: absolute;
+
+            width: 33%;
+            height: 200px;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        .imgdiv > div:nth-child(2) {
+            position: absolute;
+
+            width: 33%;
+            height: 200px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+        .imgdiv > div:nth-child(3) {
+            position: absolute;
+
+            width: 33%;
+            height: 200px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    </style>
 </head>
 <body>
+<header>
+    <aside class="logo">
+        <img src="ijse.png" alt="logo" />
+    </aside>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i><a href="">Home</a></li>
+            <li><i class="fas fa-globe-africa"></i><a href="">Service</a></li>
+            <li><i class="fas fa-id-badge"></i><a href="">Contacts</a></li>
+            <li><i class="fas fa-info-circle"></i><a href="">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!-- side menu -->
 
+    <div class="side_menu">
+        <ul class="SM">
+            <li><i class="fas fa-home"></i><a href="">Home</a></li>
+            <li><i class="fas fa-globe-africa"></i><a href="">Service</a></li>
+            <li><i class="fas fa-id-badge"></i><a href="">Contacts</a></li>
+            <li><i class="fas fa-info-circle"></i><a href="">About Us</a></li>
+        </ul>
+    </div>
+
+    <section class="imgdiv">
+        <div>
+            <img src="142109030_SMILING_FLOWER_400px.gif" alt="gif" />
+        </div>
+        <div><img src="142109030_SMILING_FLOWER_400px.gif" alt="gif" /></div>
+        <div><img src="142109030_SMILING_FLOWER_400px.gif" alt="gif" /></div>
+    </section>
+
+    <section class="pg">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            sapiente ratione cum expedita, itaque, aspernatur esse vero fugiat
+            praesentium aperiam hic. Sequi accusantium et sint optio voluptatem
+            earum veritatis a?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            sapiente ratione cum expedita, itaque, aspernatur esse vero fugiat
+            praesentium aperiam hic. Sequi accusantium et sint optio voluptatem
+            earum veritatis a?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            sapiente ratione cum expedita, itaque, aspernatur esse vero fugiat
+            praesentium aperiam hic. Sequi accusantium et sint optio voluptatem
+            earum veritatis a?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            sapiente ratione cum expedita, itaque, aspernatur esse vero fugiat
+            praesentium aperiam hic. Sequi accusantium et sint optio voluptatem
+            earum veritatis a?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+            quo dolorem quisquam similique quis qui sint perspiciatis facilis.
+            Unde quibusdam illum est iusto iure, et accusantium repudiandae minima
+            asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis error facere ipsum, alias perferendis quaerat exercitationem
+            distinctio culpa sequi dolorum eveniet voluptates. Voluptatum incidunt
+            nostrum recusandae aliquid. Eius, ea? Maiores.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023. All rights reserved.</p>
+</footer>
 </body>
 </html>
