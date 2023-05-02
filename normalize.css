@@ -1,15 +1,14 @@
-{
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   list-style: none;
   text-decoration: none;
 }
 header{
   position: fixed;
   right: 0;
-  left: 60px;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -27,11 +26,9 @@ body{
   font-size: 55px;
   font-weight: 700;
   color: white;
-  text-decoration: none;
 }
 .navlist{
   display: flex;
-
 
 }
 .navlist a{
@@ -42,8 +39,6 @@ body{
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: all .55s ease;
-  text-decoration: none;
-
 
 }
 .navlist a:hover{
@@ -76,9 +71,10 @@ ul{
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
+
 }
 section{
-  padding: 0 19%;
+  padding: 0 16%;
 }
 .article-text h1{
   font-size: 40px;
@@ -87,6 +83,14 @@ section{
   margin-bottom: 40px;
 
 }
+.main-image{
+  padding: 0 30%;
+}
 .article-text h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  line-height: 1;
+  color: white;
+  margin: 0 0 45px;
 
 }
