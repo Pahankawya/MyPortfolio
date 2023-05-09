@@ -1,161 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Animation Case 02</title>
+  <link href="normalize.css" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <title>Car Animation</title>
-    <link href="normalize.css" rel="stylesheet">
-    <meta content="width=device-width initial-scale=1" name="viewport">
+  <style>
 
-    <style>
+    div {
+      width: 10px;
+      height: 10px;
+      border: 5px solid crimson;
+      border-radius: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin:auto;
 
-        /* ================ Main background effects ===============*/
+      animation-name: animation_div;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
 
-        body {
-            background: url("assets/sky.jpg");
-            overflow: hidden;
-        }
+    @keyframes animation_div {
+      0% {
+        width: 20px;
+        height: 20px;
+      }
+      100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+        border: 10px solid rgb(229, 17, 77);
+      }
 
-
-        /* ================ City effects ===============*/
-        .city {
-            display: flex;
-            position: absolute;
-            bottom: 13vw;
-            animation-name: city;
-            animation-duration: 10s;
-        }
-
-        .city > img {
-            height: 40vh;
-        }
-
-        @keyframes city {
-            from {
-                left: 0;
-            }
-            to {
-                left: -200%;
-            }
-        }
-
-       /* ================ Road effects ===============*/
-
-        .road {
-            display: flex;
-            position: absolute;
-            bottom: 0;
-            animation-name: road;
-            animation-duration: 10s;
-        }
-
-        @keyframes road {
-            from {
-                left: 0;
-            }
-            to {
-                left: -200%;
-            }
-        }
-
-        .road > img {
-            height: 13vw;
-        }
-
-        /* ================ Car effects ===============*/
-
-        .car {
-            position: absolute;
-            height: 30%;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .car > img {
-            position: absolute;
-            width: 30%;
-            left: 0;
-            right: 0;
-            bottom: 15vh;
-            margin: auto;
-        }
+    }
 
 
 
-        /* ================ All wheels effects ===============*/
-        .wheels {
-            position: absolute;
-            height: 30%;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .wheels > img {
-            position: absolute;
-            width: 6%;
-            left: 0;
-            right: 0;
-            bottom: 16vh;
-            margin: auto;
-            animation-name: wheel;
-            animation-duration: 10s;
-        }
-
-        @keyframes wheel {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(1500deg);
-            }
-        }
-
-        .wheels .wheel-1 {
-            position: absolute;
-            left: 17vw;
-            right: 0;
-            margin: auto;
-        }
-
-        .wheels .wheel-2 {
-            position: absolute;
-            left: 0;
-            right: 19vw;
-            margin: auto;
-        }
-
-
-    </style>
+  </style>
 
 
 </head>
 <body>
-<main>
 
-    <div class="city">
-        <img src="assets/city.png" alt="city">
-        <img src="assets/city.png" alt="city">
-        <img src="assets/city.png" alt="city">
-        <img src="assets/city.png" alt="city">
-    </div>
-
-    <div  class="road">
-        <img src="assets/road.jpg" alt="road">
-        <img src="assets/road.jpg" alt="road">
-    </div>
-
-    <div class="car">
-        <img src="assets/car.png" alt="car">
-    </div>
-
-    <div class="wheels">
-        <img class="wheel-1" src="assets/wheel.png" alt="wheel-1">
-        <img class="wheel-2" src="assets/wheel.png" alt="wheel-2">
-    </div>
-
-
-
-</main>
+<section>
+  <div></div>
+</section>
 
 </body>
 </html>

@@ -2,100 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Animation Case 03</title>
+    <title>CSS Animation</title>
+    <link href="normalize.css" rel="stylesheet">
+
+    <meta content="width=device-width initial-scale=1" name="viewport">
 
     <style>
 
-        main {
-            width: 900px;
-            height: 480px;
-            position: absolute;
-            box-shadow: 1px 3px 5px 1px #736060;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            overflow-x: hidden;
+        section{
+            width: 100vw;
+            height: 100vh;
         }
 
-        main > section {
-            height: 100%;
-            width: 400%;
-            display: flex;
-            animation-name: slider-animation;
-            animation-duration: 10s;
-            animation-direction: alternate;
+        section> div{
+            width: 180px;
+            height: 80px;
+            background: red;
+            border-radius: 50px;
+            animation-name: rotate_rectangle;
+            animation-duration: 7s;
             animation-iteration-count: infinite;
-            animation-timing-function: linear;
-
+            animation-direction: alternate;
+            position: relative;
         }
 
-        main > section > div {
-            height: 100%;
-            width: 100%;
-        }
-
-        .image_1 {
-            background: url("assets/image1.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        .image_2 {
-            background: url("assets/image2.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        .image_3 {
-            background: url("assets/image5.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        .image_4 {
-            background: url("assets/image4.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-
-        @keyframes slider-animation {
-            0%, 20% {
-                transform: translateX(0);
+        @keyframes rotate_rectangle {
+            0% {
+                left: 0;
+                top: 0;
+                background: red;
             }
-
-            25%, 40% {
-                transform: translateX(-25%);
+            25% {
+                left: 80vw;
+                top: 0;
+                transform: rotate(90deg);
+                background: green;
             }
-
-            50%, 70% {
-                transform: translateX(-50%);
+            50% {
+                left: 80vw;
+                top: 600px;
+                transform: rotate(180deg);
+                background: #ffff00;
             }
-
-            80%, 100% {
-                transform: translateX(-75%);
+            75% {
+                left: 0;
+                top: 600px;
+                transform: rotate(270deg);
+                background: deeppink;
+            }
+            100% {
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
+                background: #095fc0;
             }
         }
-
-
     </style>
+
 
 </head>
 <body>
-
 <main>
     <section>
+        <div>
 
-        <div class="image_1"></div>
-        <div class="image_2"></div>
-        <div class="image_3"></div>
-        <div class="image_4"></div>
-
+        </div>
     </section>
-
 </main>
-
 </body>
 </html>
