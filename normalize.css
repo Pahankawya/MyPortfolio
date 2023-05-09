@@ -104,6 +104,10 @@ section{
   height: auto;
 
 }
+.main-image img{
+  border-radius: 40%;
+}
+
 .article-text a{
   display: inline-block;
   color: white;
@@ -176,14 +180,16 @@ section{
   }
 
 }
-@media (max-width: 1340px){
-  .main-image img{
+@media (max-width: 1340px) {
+  .main-image img {
     width: 100%;
     height: auto;
   }
-  .article-text h1{
+
+  .article-text h1 {
     font-size: 75px;
     margin: 0 0 30px;
   }
-  .article-text h2{
 }
+/*  .article-text h2{*/
+/*}*/
