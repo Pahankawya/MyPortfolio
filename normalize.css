@@ -19,17 +19,18 @@ header{
   background: transparent;
 }
 
-/*body{*/
-/*  background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);*/
-/*}*/
+body{
+  background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+}
 .logo{
   font-size: 55px;
   font-weight: 700;
   color: white;
+
+
 }
 .navlist{
   display: flex;
-
 }
 .navlist a{
 
@@ -190,6 +191,70 @@ section{
     font-size: 75px;
     margin: 0 0 30px;
   }
+.article-text h2{
+    margin-bottom: 25px;
 }
-/*  .article-text h2{*/
-/*}*/
+@media (max-width: 1195px) {
+  section{
+    padding: 0 3%;
+    transition: .2s;
+  }
+  .article-text{
+    padding-top: 115px;
+
+  }
+  .main-image{
+    text-align: center;
+  }
+  .main-image img{
+    width: 560px;
+    height: auto;
+  }
+  .main{
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .icons{
+    display: none;
+  }
+  .scroll-down{
+    display: none;
+  }
+}
+  @media (max-width: 990px) {
+    #menu-icon{
+      display: block;
+    }
+    .navlist{
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 300px;
+      height: 40vh;
+      background: #4d9559;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 20px;
+      transition: all .55s ease;
+    }
+    .navlist a{
+      margin-left: 0;
+      display: block;
+      margin: 7px 0;
+    }
+    .navlist.open{
+      right: 0;
+
+    }
+  }
+  @media (max-width: 680px) {
+    .main-image img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  }
