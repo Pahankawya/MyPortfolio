@@ -10,13 +10,13 @@ header{
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1000;
   width: 100%;
+  padding: 33px 9%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 33px 9%;
-  background: transparent;
+  background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+  z-index: 1000;
 }
 
 body{
@@ -106,9 +106,11 @@ section{
 
 }
 .main-image img{
-  border-radius: 40%;
+  border-radius: 12%;
 }
-
+.main-image img:hover{
+  opacity: .8;
+}
 .article-text a{
   display: inline-block;
   color: white;
@@ -191,42 +193,51 @@ section{
     font-size: 75px;
     margin: 0 0 30px;
   }
-.article-text h2{
-    margin-bottom: 25px;
-}
-@media (max-width: 1195px) {
-  section{
-    padding: 0 3%;
-    transition: .2s;
-  }
-  .article-text{
-    padding-top: 115px;
 
+  .article-text h2 {
+    margin-bottom: 25px;
   }
-  .main-image{
-    text-align: center;
+
+  @media (max-width: 1195px) {
+    section {
+      padding: 0 3%;
+      transition: .2s;
+    }
+
+    .article-text {
+      padding-top: 115px;
+
+    }
+
+    .main-image {
+      text-align: center;
+    }
+
+    .main-image img {
+      width: 560px;
+      height: auto;
+    }
+
+    .main {
+      height: 100%;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+
+    .icons {
+      display: none;
+    }
+
+    .scroll-down {
+      display: none;
+    }
   }
-  .main-image img{
-    width: 560px;
-    height: auto;
-  }
-  .main{
-    height: 100%;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-  }
-  .icons{
-    display: none;
-  }
-  .scroll-down{
-    display: none;
-  }
-}
   @media (max-width: 990px) {
-    #menu-icon{
+    #menu-icon {
       display: block;
     }
-    .navlist{
+
+    .navlist {
       position: absolute;
       top: 100%;
       right: -100%;
@@ -239,22 +250,142 @@ section{
       padding: 50px 20px;
       transition: all .55s ease;
     }
-    .navlist a{
+
+    .navlist a {
       margin-left: 0;
       display: block;
       margin: 7px 0;
     }
-    .navlist.open{
+
+    .navlist.open {
       right: 0;
 
     }
   }
   @media (max-width: 680px) {
-    .main-image img{
+    .main-image img {
       width: 100%;
       height: auto;
     }
   }
+}
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 6rem;
 
+}
+.heading{
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+span{
+  font-family: 'Permanent Marker', cursive;
+  color: #4d9559;
+}
+.about-img{
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-img img{
+  width: 90%;
+  border-radius: 50%;
+  border: .2rem solid #4d9559;
+}
+.about-img .circle-spin{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: .2rem solid transparent;
+  border-bottom: .2rem solid transparent;
+  border-left: .2rem solid #4d9559;
+  border-right: .2rem solid #4d9559;
+}
+.about-content{
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
 
-  }
+}
+.about-content h3 {
+  font-size: 1.8rem;
+  font-family: 'Rufina', serif;
+}
+.about-content a{
+  color: white;
+  text-decoration: underline;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 70px;
+  grid-template-columns: auto auto;
+  row-gap: 20px;
+
+}
+.grid-item {
+  font-size: 29px;
+  font-family: 'VT323', monospace;
+  text-align: left;
+  color: white;
+
+}
+.grid-item:hover{
+  opacity: .5;
+}
+.btns a {
+  display: inline-block;
+  color: white;
+  background: #4d9559;
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+  font-family: 'Poppins', cursive;
+  margin-left: 500px;
+}
+
+.btns a:hover{
+  background: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+.btns a.cvdown{
+  background: transparent;
+  border: 1px solid white;
+  margin-left: 10px;
+}
+.btns a.cvdown i{
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.education{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  padding-bottom: 5rem;
+}
+
