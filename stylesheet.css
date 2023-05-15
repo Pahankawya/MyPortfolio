@@ -67,7 +67,7 @@ ul{
   height: 100%;
   width: 100%;
   min-height: 100vh ;
-  background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+  /*background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);*/
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -324,8 +324,9 @@ span{
 
 }
 .about-content h3 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-family: 'Rufina', serif;
+  color: black;
 }
 .about-content a{
   color: white;
@@ -387,5 +388,43 @@ span{
   flex-direction: column;
   min-height: auto;
   padding-bottom: 5rem;
+
+}
+.education .education-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.education-row .education-column{
+  flex: 1 1 40rem;
 }
 
+.education-column .title{
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 2rem;
+  font-family: 'Rufina', serif;
+
+}
+.education-column .education-box {
+  border-left: .2rem solid #4d9559;
+}
+.education-box .education-content {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.education-content .content{
+  position: relative;
+  padding: 1.5rem;
+  border: .2rem solid #4d9559;
+  border-radius: .6rem;
+  margin-bottom: 2rem;
+  color: white;
+
+}
+.education-content .content .year{
+  font-size: 1.5rem;
+  color: #4d9559;
+  padding-bottom: .5rem;
+
+}
