@@ -12,13 +12,17 @@ header{
   right: 0;
   top: 0;
   width: 100%;
-  padding: 33px 9%;
+  padding: 20px 9%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /*background: #738678;*/
+  opacity: 90%;
   background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
   z-index: 1000;
+
 }
+
 
 body{
   background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);

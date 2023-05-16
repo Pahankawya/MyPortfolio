@@ -1,12 +1,16 @@
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-.project{
-  min-height: 100vh;
+.assignment{
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EFEFEF;
+  background-color: transparent;
+}
+.assignment h2 {
+position: absolute;
+  min-height: 60vh;
 }
 .slide-container{
   max-width: 1120px;
