@@ -5,6 +5,7 @@
   font-family: 'Open Sans', sans-serif;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 header{
   position: fixed;
@@ -716,3 +717,54 @@ span{
   resize: none;
 }
 
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: forestgreen;
+}
+
+.footer-text p{
+  font-size: 1.3rem;
+  font-family: 'Rufina', serif;
+}
+
+.footer-iconTop a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: forestgreen;
+  border: .2rem solid white;
+  border-radius: .6rem;
+  z-index: 1;
+  overflow: hidden;
+
+}
+.footer-iconTop a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: gold;
+  z-index: -1;
+  transition: .5s;
+}
+.footer-iconTop a:hover::before {
+  width: 100%;
+}
+
+.footer-iconTop a i {
+  font-size: 1.8rem;
+  color: black;
+  transition: .5s;
+}
+
+.footer-iconTop a:hover i{
+  color: black;
+}
