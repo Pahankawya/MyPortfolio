@@ -33,33 +33,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Permanent+Marker&family=Podkova&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Rufina&family=VT323&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="assignments/css/case_01/normalize.css">
 
 
 </head>
 <body>
-<header>
+<header class="header">
     <a class="logo">My Portfolio</a>
-    <nav>
-        <menu>
-            <ul class="navlist">
-                <li><a href="#" >Home</a></li>
-                <li><a href="#about" >About</a></li>
-                <li><a href="#education" >Education</a></li>
-                <li><a href="#skills" >Skills</a></li>
-                <li><a href="https://github.com/Pahankawya?tab=repositories" target="_blank">Projects</a></li>
-                <li><a href="#assignment" >Assignments</a></li>
-                <li><a href="#contact" >Contact me</a></li>
-            </ul>
 
-        </menu>
-    </nav>
+            <nav class="navlist">
+                <a href="#" >Home</a>
+                <a href="#about" >About</a>
+                <a href="#education" >Education</a>
+                <a href="#skills" >Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#assignment" >Assignments</a>
+                <a href="#contact" >Contact me</a>
+            </nav>
+
     <div class="bx bx-menu" id="menu-icon"></div>
     <div></div>
 </header>
 
 <!--home section-->
-<section class="article">
+<section class="article" id="home">
     <div class="article-text">
         <h1>Hey there!</h1>
         <h2>I'm Pahan kawya</h2>
@@ -179,17 +176,17 @@
             <div class="skills-box">
                 <div class="skills-content">
                     <div class="progress">
-                        <h3>HTML <span>90%</span></h3>
+                        <h3>HTML <span>85%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
 
                     <div class="progress">
-                        <h3>CSS <span>90%</span></h3>
+                        <h3>CSS <span>70%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
 
                     <div class="progress">
-                        <h3>Java Script <span>90%</span></h3>
+                        <h3>Java Script <span>50%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
 
@@ -198,7 +195,7 @@
                         <div class="bar"><span></span></div>
                     </div>
                     <div class="progress">
-                        <h3>Arduino <span>90%</span></h3>
+                        <h3>Arduino <span>80%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
                 </div>
@@ -211,26 +208,26 @@
             <div class="skills-box">
                 <div class="skills-content">
                     <div class="progress">
-                        <h3>Python <span>0%</span></h3>
+                        <h3>Python <span>5%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
 
                     <div class="progress">
-                        <h3>Swift <span>90%</span></h3>
+                        <h3>Swift <span>10%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
 
                     <div class="progress">
-                        <h3>Mobile app development <span>0%</span></h3>
+                        <h3>Mobile app development <span>5%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
 
                     <div class="progress">
-                        <h3>C++ <span>0%</span></h3>
+                        <h3>C++ <span>25%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
                     <div class="progress">
-                        <h3>PHP <span>0%</span></h3>
+                        <h3>PHP <span>15%</span></h3>
                         <div class="bar"><span></span></div>
                     </div>
                 </div>
@@ -238,6 +235,56 @@
         </div>
     </div>
 </section>
+
+<!--project section-->
+
+<section id="projects">
+<h2 class="heading">My <span>Projects</span></h2>
+</section>
+<section class="grid-section" >
+
+    <div class="grid">
+        <div class="grid-img">
+            <img class="img1" src="assets/img/architecture-building-convenience-store-grocery-people.jpg"></img>
+        </div>
+        <div class="overly">
+            <h2>Grocery Management </h2>
+            <a href="https://github.com/Pahankawya/MVC-project" target="_blank" class="btn">View More</a>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="grid-img">
+            <img class="img1" src="assets/img/ultconnectfour_play.jpg">
+        </div>
+        <div class="overly">
+            <h2>Connect four game!</h2>
+            <a href="https://github.com/Pahankawya/Connecter-Assignment" target="_blank" class="btn">View More</a>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="grid-img">
+            <img class="img1" src="assets/img/depositphotos_261784172-stock-photo-hotel-bedroom-unmade-bed-city-transformed%20(1)%201.png">
+        </div>
+        <div class="overly">
+            <h2>Hostel Management System </h2>
+            <a href="https://github.com/Pahankawya/Hostal_management_system" target="_blank" class="btn">View More</a>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="grid-img">
+            <img class="img1" src="assets/img/photo-1505664063603-28e48ca204eb%201.png">
+        </div>
+        <div class="overly">
+            <h2>My Portfolio</h2>
+            <a href="https://github.com/Pahankawya/MyPortfolio" target="_blank" class="btn">View More</a>
+        </div>
+    </div>
+</section>
+</section>
+
 
 <!--Assignment section-->
 
@@ -453,7 +500,7 @@
                         <span class="overlay"></span>
 
                         <div class="card-image">
-                            <a href="assignments/css/Animation/Animation/Case_06/index.html" target="_blank"><img src="assets/img/slider/Animation4.gif" alt="" class="card-img">
+                            <a href="assignments/css/Animation/Animation/Case_06/index.html" target="_blank"><img src="assets/img/Animation4.gif" alt="" class="card-img">
                             </a>
                         </div>
                     </div>
@@ -475,7 +522,6 @@
         <div class="swiper-pagination"></div>
     </div>
 </section>
-
 
 <!--contact section-->
 <section class="contact" id="contact">
@@ -552,7 +598,6 @@
     </div>
 
 </section>
-
 
 <!--footer design-->
 <footer class="footer">
