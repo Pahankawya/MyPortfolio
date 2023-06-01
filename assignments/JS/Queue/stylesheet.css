@@ -1,0 +1,35 @@
+*{
+    background: grey;
+}
+/*section>h1{*/
+/*    color: white;*/
+/*    position: absolute;*/
+/*    margin-left: 300px;*/
+/*    margin-bottom: 400px;*/
+/*}*/
+ section{
+     width: 1000px;
+     height: 320px;
+     border: transparent;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     margin: auto;
+     display: flex;
+     align-items: center;
+
+}
+    section>div {
+        border: 1px solid transparent;
+        height: 100px;
+        width: 100px;
+        flex-grow: 1;
+    }
+    section>div:first-child{
+        align-self: start;
+    }
+    section>div:last-child{
+        align-self: end;
+    }

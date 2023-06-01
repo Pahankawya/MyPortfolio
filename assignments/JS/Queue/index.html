@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java script Queue</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<section>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<script>
+    let colors=["red","yellow","green","blue","deeppink","orange"]
+
+        setInterval(function (){
+            let divArray = document.querySelector("section").children;
+            for(let i= 0; i<divArray.length; i++){
+                // console.log(divArray[i]);
+                divArray[i].style.background=colors[i];
+                // divArray[0].style.background='red';
+                // divArray[1].style.background='yellow';
+                // divArray[2].style.background='green';
+                //  divArray.pop('orange');
+                //  divArray.shift();
+        }
+        let ly = colors.pop();
+            colors.unshift(ly);
+
+    },400);
+        // divArray.unshift();
+
+</script>
+</body>
+</html>
