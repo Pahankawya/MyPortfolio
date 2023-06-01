@@ -142,6 +142,9 @@ section.abc4>main>h1{
 
 
 <main id="Dashboard"></main>
+
+<!--Customer Form-->
+
 <section id="Customer">
 
     <section class="abc1">
@@ -154,16 +157,16 @@ section.abc4>main>h1{
                 <form class="mt-5">
                     <div class="row ">
                         <div class="col-6 ">
-                            <input type="text" class="form-control" placeholder="Customer ID" aria-label="Customer ID">
+                            <input type="text" class="form-control" placeholder="Customer ID" id="txtCustomerID" aria-label="Customer ID">
                         </div>
                         <div class="col-6 ">
-                            <input type="text" class="form-control" placeholder="Customer Name" aria-label="Customer Name">
+                            <input type="text" class="form-control" placeholder="Customer Name" id="txtCustomerName" aria-label="Customer Name">
                         </div>
                         <div class="col-6 mt-5">
-                            <input type="text" class="form-control" placeholder="Customer Address" aria-label="Customer Address">
+                            <input type="text" class="form-control" placeholder="Customer Address" id="txtCustomerAddress" aria-label="Customer Address">
                         </div>
                         <div class="col-6 mt-5">
-                            <input type="text" class="form-control" placeholder="Customer Email" aria-label="Customer Email">
+                            <input type="text" class="form-control" placeholder="Customer Email" id="txtCustomerSalary" aria-label="Customer Email">
                         </div>
                     </div>
                 </form>
@@ -172,7 +175,7 @@ section.abc4>main>h1{
 
                 <div class=" mt-5  ">
                     <div class=" offset-4" >
-                        <button type="button" class="btn btn-primary">Save Customer</button>
+                        <button type="button" class="btn btn-primary" id="btnCustomer">Save Customer</button>
                         <button type="button" class="btn btn-danger">Delete Customer</button>
                         <button type="button" class="btn btn-warning">Update Customer</button>
                         <button type="button" class="btn btn-success">Get All</button>
@@ -182,7 +185,7 @@ section.abc4>main>h1{
             </section>
 
             <section class="justify-content-center ">
-                <table class="mt-5 table table-hover table-bordered">
+                <table id="My-table" class="mt-5 table table-hover table-bordered">
                     <thead>
                     <tr>
                         <th>Customer ID</th>
@@ -226,7 +229,7 @@ section.abc4>main>h1{
 </section>
 
 
-<!--=============================================================-->
+<!--========Item=====================================================-->
 
 <section id="Item">
 
@@ -381,6 +384,7 @@ section.abc4>main>h1{
 
 </section>
 
+<!--place order form-->
 
 <section id="PlaceOrder">
 
@@ -577,6 +581,30 @@ section.abc4>main>h1{
         document.getElementById("PlaceOrder").style.display = 'inline-block';
     });
 
+
+        // ==================Save cusomter================================
+    document.getElementById("btnCustomer").addEventListener("click", function () {
+        let id = document.getElementById("txtCustomerID");
+        let name = document.getElementById("txtCustomerName");
+        let address = document.getElementById("txtCustomerAddress");
+        let salary = document.getElementById("txtCustomerSalary");
+
+
+
+        var table = document.getElementById("My-table");
+        var row = table.insertRow(-1);
+        <!-- Filling the new created cell -->
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+
+        cell1.innerHTML =id.value;
+        cell2.innerHTML = name.value;
+        cell3.innerHTML = address.value;
+        cell4.innerHTML = salary.value;
+
+    })
 
 </script>
 
