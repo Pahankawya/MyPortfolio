@@ -34,22 +34,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Permanent+Marker&family=Podkova&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Rufina&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assignments/CSS/case_01/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
 
+
+    <style>
+        #loader {
+            transition: opacity 1s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: black;
+            z-index: 3;
+        }
+
+        #loader > div {
+            width: 290px;
+            height: 290px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: url("assets/img/1_e_Loq49BI4WmN7o9ItTADg.gif");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 
 </head>
 <body>
 <header class="header">
     <a class="logo">My Portfolio</a>
 
-            <nav class="navlist">
-                <a href="#" >Home</a>
-                <a href="#about" >About</a>
-                <a href="#education" >Education</a>
-                <a href="#skills" >Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#assignment" >Assignments</a>
-                <a href="#contact" >Contact me</a>
-            </nav>
+    <nav class="navlist">
+        <a href="#" >Home</a>
+        <a href="#about" >About</a>
+        <a href="#education" >Education</a>
+        <a href="#skills" >Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#assignment" >Assignments</a>
+        <a href="#contact" >Contact me</a>
+    </nav>
 
     <div class="bx bx-menu" id="menu-icon"></div>
     <div></div>
@@ -238,7 +266,7 @@
 
 <!--project section-->
 <section id="projects">
-<h2 class="heading">My <span>Projects</span></h2>
+    <h2 class="heading">My <span>Projects</span></h2>
 </section>
 <section class="grid-section" >
 
@@ -304,7 +332,7 @@
 
                     <div class="card-content">
                         <p class="description">- Absolute Position -<br/>
-                        <br/>
+                            <br/>
                             <br/>
                         </p>
                         <button class="button">View More</button>
@@ -508,7 +536,7 @@
                         <p class="description">- Car Animation -<br/>
                             <br/>
                             <br/></p>
-                       <button class="button">View More</button>
+                        <button class="button">View More</button>
 
                     </div>
                 </div>
@@ -642,7 +670,7 @@
     <br/>
 
     <div class="parafor-icons">
-    <p class="try">Follow me on socials!</p>
+        <p class="try">Follow me on socials!</p>
         <br/>
     </div>
     <div class="icons2">
@@ -671,10 +699,24 @@
 <!-- JavaScript scroll-->
 <script src="https://unpkg.com/scrollreveal"></script>
 
+<div id="loader">
+    <div></div>
+</div>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script>
+    $(window).on('load',function(){
+        $("#loader").fadeOut(300);
+    });
 
+
+    $(document).ready(function (){
+        $("body").prepend();
+    });
+</script>
 </body>
 <!-- JavaScript -->
 <script src="js/swiper-bundle.min.js"></script>
+
 
 
 <!-- JavaScript -->
