@@ -18,5 +18,5 @@ Crated My Personal Portfolio
 
 
 ## Basic Background of PortFolio
-<img src="assets/img/Screenshot (280).png">
+<img src="assets/img/Screenshot%20(280).png">
 
