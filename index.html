@@ -46,7 +46,7 @@
             bottom: 0;
             right: 0;
             background: black;
-            z-index: 3;
+            z-index: 5;
         }
 
         #loader > div {
@@ -87,14 +87,14 @@
 <section class="article" id="home">
     <div class="article-text">
         <h1>Hey there!</h1>
-        <h2>I'mPahankawya</h2>
+        <h2>I'm  Pahan   kawya</h2>
         <p>I'm currently learning computer science at IJSE</p>
-        <a class="hire" href="#about">About me!</a>
-        <a href="assets/Inline%20Text%20From%20P%20PDF.pdf" class="cvdown"><i class="ri-download-cloud-fill"></i>Download CV</a>
+        <a class="hire1" href="#about">About me!</a>
+        <a href="assets/Inline%20Text%20From%20P%20PDF.pdf" target="_blank" class="cvdown1"><i class="ri-download-cloud-fill"></i>Download CV</a>
     </div>
-<!--    <div class="main-image">-->
-        <img src="assets/img/My_project-1-removebg-preview.png" width="600">
-<!--    </div>-->
+
+        <img class="main-image1" src="assets/img/My_project-1-removebg-preview.png" width="600">
+
     <div class="icons">
         <a href="#"><i class="ri-instagram-fill"></i></a>
         <a href="#"><i class="ri-twitter-fill"></i></a>
@@ -136,12 +136,11 @@
         <h4 class="grid-item">  City :  &nbsp Galle </h4>
         <h4 class="grid-item">  Email : &nbsp Pahant24@gmail.com </h4>
     </div>
-    <section class="btns" id="btns">
-
+    <div class="btns" id="btns">
 
         <a class="hire" href="#">Hire me?</a>
-        <a href="assets/Inline%20Text%20From%20P%20PDF.pdf" class="cvdown"><i class="ri-download-cloud-fill"></i>Download CV</a>
-    </section>
+        <a href="assets/Inline%20Text%20From%20P%20PDF.pdf" class="cvdown" target="_blank"><i class="ri-download-cloud-fill"></i>Download CV</a>
+    </div>
 
 </section>
 
@@ -705,7 +704,7 @@
 <script src="js/jquery-3.7.0.min.js"></script>
 <script>
     $(window).on('load',function(){
-        $("#loader").fadeOut(300);
+        $("#loader").fadeOut(500);
     });
 
 

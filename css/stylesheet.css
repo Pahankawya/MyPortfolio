@@ -86,6 +86,13 @@ ul{
   gap: 2rem;
 
 }
+.hire1{
+  text-decoration: none;
+
+}
+.cvdown1 {
+  text-decoration: none;
+}
 section{
   padding: 0 16%;
 }
@@ -97,6 +104,7 @@ section{
   margin-bottom: 10px;
 }
 .article-text h2 {
+  width: 500px;
   font-family: 'Permanent Marker', cursive;
   font-size: 60px;
   line-height: 1;
@@ -114,7 +122,7 @@ section{
 .article-text h2::before{
   content: '';
   position: absolute;
-  top: 58px;
+  /*top: 58px;*/
   left: -5px;
   width: 0;
   height: 25%;
@@ -131,16 +139,19 @@ section{
   margin-bottom: 10px;
 }
 
-.main-image{
-  size: 100px;
-  width: 297px;
-  height: 650px;
-  margin-right: 550px;
+/*.main-image1{*/
+/*  size: 100px;*/
+/*  width: 297px;*/
+/*  height: 650px;*/
+/*  margin-right: 550px;*/
+/*}*/
+
+.main-image1 {
+  position: relative;
+  top: 50px;
+  width: 750px;
+  height: 750px;
 }
-/*.main-image img{
-  width: 900px;
-  height: 900px;
-}*/
 /*.main-image img:hover{*/
 /*  opacity: .8;*/
 
@@ -165,12 +176,12 @@ section{
   border: 1px solid white;
   transform: translateX(8px);
 }
-.article-text a.cvdown{
+.article-text a.cvdown1{
   background: transparent;
   border: 1px solid white;
   margin-left: 10px;
 }
-.article-text a.cvdown i{
+.article-text a.cvdown1 i{
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -220,20 +231,21 @@ section{
 
 }
 @media (max-width: 1340px) {
-  .main-image img {
-    width: 100%;
+  .main-image1 {
+    width: 600px;
     height: auto;
   }
 
   .article-text h1 {
-    font-size: 75px;
+    font-size: 55px;
     margin: 0 0 30px;
   }
 
   .article-text h2 {
     margin-bottom: 25px;
   }
-
+  .article-text h2
+}
   @media (max-width: 1195px) {
     section {
       padding: 0 3%;
@@ -245,11 +257,11 @@ section{
 
     }
 
-    .main-image {
+    .main-image1 {
       text-align: center;
     }
 
-    .main-image img {
+    .main-image1 {
       width: 560px;
       height: auto;
     }
@@ -267,10 +279,50 @@ section{
     .scroll-down {
       display: none;
     }
+    .article-text h2::before{
+      height: 15%;
+    }
   }
-  @media (max-width: 990px) {
+@media (max-width: 932px) {
+  .hire {
+    position: relative;
+    right: 100px;
+
+  }
+  .cvdown{
+    position: relative;
+    right: 95px;
+    bottom: 1px;
+  }
+}
+@media (max-width: 876px) {
+  .cvdown{
+    position: relative;
+    left: 525px;
+    bottom: 42px;
+  }
+}
+
+@media (max-width: 793px) {
+  .hire {
+    position: relative;
+    right: 300px;
+
+  }
+  .cvdown{
+    position: relative;
+    left: 340px;
+    bottom: 44px;
+  }
+}
+  @media (max-width: 910px) {
+    .article-text h2::before{
+      height: 95%;
+    }
     #menu-icon {
+      position: relative;
       display: block;
+      left: 180px;
     }
 
     .navlist {
@@ -297,13 +349,166 @@ section{
       right: 0;
 
     }
+
+    .main-image1 {
+      position: absolute;
+      bottom: 350px;
+      width: 450px;
+      height: auto;
+    }
+
+    .article-text h1 {
+      position: relative;
+      top: 80px;
+    }
+
+    .article-text h2 {
+      position: relative;
+      top: 50px;
+    }
+    .article-text p{
+      position: relative;
+      top: 34px;
+    }
+    .article-text a{
+      position: relative;
+      top: 40px;
+    }
+
   }
+@media (max-width: 720px) {
+  #menu-icon {
+    position: relative;
+    display: block;
+    left: 140px;
+  }
+  .parafor-icons p{
+    position: relative;
+    right: 20px;
+  }
+  .icons2{
+    position: relative;
+    left: 80px;
+  }
+
+
+}
   @media (max-width: 680px) {
-    .main-image img {
+    .main-image1 {
+      transition: .2s;
+      display: none;
       width: 100%;
       height: auto;
     }
+    #menu-icon {
+      position: relative;
+      display: block;
+      left: 120px;
+    }
   }
+@media (max-width: 662px) {
+  .btns{
+    width: 540px;
+    height: 100px;
+  }
+  .hire {
+    position: relative;
+    right: 280px;
+    width: 123px;
+  }
+}
+@media (max-width: 590px) {
+  #menu-icon {
+    position: relative;
+    display: block;
+    left: 90px;
+  }
+  .grid-container{
+    position: relative;
+    left: 30px;
+
+  }
+}
+
+@media (max-width: 526px) {
+  #menu-icon {
+    position: relative;
+    display: block;
+    left: 40px;
+  }
+  .article-text h2{
+    font-size: 49px;
+  }
+  .grid-container{
+    position: relative;
+    left: 30px;
+
+  }
+  .grid-item {
+    font-size: 20px;
+  }
+  .article-text h2 {
+    width: 410px;
+  }
+  .btns{
+    width: 500px;
+    height: 100px;
+  }
+}
+@media (max-width: 532px) {
+  .btns{
+    width: 510px;
+    height: 100px;
+  }
+  .hire{
+    position: relative;
+    right: 340px;
+  }
+  .cvdown{
+    position: relative;
+    left: 290px;
+
+  }
+}
+  @media (max-width: 412px) {
+    .about-img img{
+      position: relative;
+      left: 40px;
+    }
+    .about-img .circle-spin{
+      position: relative;
+      margin-left: 40px;
+    }
+    .heading{
+      position: relative;
+      left: 40px;
+    }
+
+  .about-content h3{
+    position: relative;
+    left: 40px;
+  }
+  .about-content{
+    position: relative;
+    left: 40px;
+  }
+    #menu-icon {
+      position: relative;
+      display: block;
+      left: 20px;
+    }
+    .grid-container{
+      position: relative;
+      left: 65px;
+
+    }
+    .grid-item {
+      font-size: 15px;
+    }
+    .icons2{
+      position: relative;
+      left: 100px;
+    }
 }
 
 /*about section*/
@@ -419,6 +624,7 @@ span{
   vertical-align: middle;
   margin-right: 5px;
 }
+
 
 /*education section*/
 
@@ -812,10 +1018,12 @@ span{
   transform: translateX(5px);
 }
 .parafor-icons p{
+  position: relative;
   color: white;
   font-family: 'Rufina', serif;
   font-size: 18px;
   margin-left: 128px;
+  right: 20px;
 
 }
 
